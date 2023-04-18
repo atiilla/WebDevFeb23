@@ -72,3 +72,12 @@
     background-color: #f7f7f6 !important;
     color: #00285a !important;
 }
+
+.page-body{
+    background-color: #f7f7f6;
+}
+
+.product{
+    background-color: rgb(255, 255, 255) !important;
+    margin-bottom: 10px;
+}
