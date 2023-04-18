@@ -1,0 +1,74 @@
+.bg-2dehands-header{
+    background-color: #00285a;
+}
+
+.secondhand-logo {
+    background-image: url(https://cdn.ebayclassifieds.net/lrp/static/vendor/hz-web-ui/twh/assets/tenant--inverse--nlbe.150591d7.svg);
+    width: 250px;
+    height: 66px;
+    background-size: 220px 70px;
+    background-repeat: no-repeat;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .pc-version{
+        visibility: hidden;
+    }
+    .mobile-version{
+        visibility: visible;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .pc-version{
+        visibility: hidden;
+    }
+    .mobile-version{
+        visibility: visible;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .pc-version{
+        visibility: visible;
+    }
+    .mobile-version{
+        visibility: hidden;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .pc-version{
+        visibility: visible;
+    }
+    .mobile-version{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .pc-version{
+        visibility: visible;
+    }
+    .mobile-version{
+        visibility: hidden;
+    }
+}
+
+.btn-secondary{
+    border: 1px solid #c2c2c1 !important;
+    background-color: #f7f7f6 !important;
+    color: #00285a !important;
+}
