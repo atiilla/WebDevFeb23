@@ -15,6 +15,11 @@ input {
     box-shadow: 1px 2px 1px 0px rgba(166, 166, 166, 1);
 }
 
-.title >span {
+.title>span {
     text-decoration: underline;
+}
+
+
+p:nth-letter(3){
+    color:red !important;
 }
