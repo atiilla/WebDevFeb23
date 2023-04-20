@@ -21,10 +21,6 @@
     height:3px;
 }
 
-.double-square{
-
-}
-
 .right_menu_icons > a{
     margin-bottom:2rem;
     font-size:15pt;
@@ -37,4 +33,17 @@
 .card-group > .col > .card{
     max-height: 300px;
     height: 100%;
-} 
+}
+
+.icon{
+    background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMC41IiB5PSIwLjUiIHdpZHRoPSI5IiBoZWlnaHQ9IjkiIHN0cm9rZT0iI2ZmYzAyOSIvPgo8cmVjdCB4PSI1LjUiIHk9IjUuNSIgd2lkdGg9IjkiIGhlaWdodD0iOSIgc3Ryb2tlPSIjZmZjMDI5Ii8+Cjwvc3ZnPgo=);
+    background-size: 30px;
+    width:30px;
+    height:30px;
+    margin-bottom:10px;
+}
+
+.icon>.test{
+    margin-left:40px
+
+}
