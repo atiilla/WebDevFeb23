@@ -1,0 +1,20 @@
+.registration-form {
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(217, 206, 217, 1);
+    -moz-box-shadow: 3px 5px 5px 0px rgb(31, 31, 32);
+    box-shadow: 3px 5px 5px 0px rgb(44, 43, 44);
+}
+
+.bg-register {
+    background: rgb(15, 23, 42);
+    background: linear-gradient(141deg, rgba(15, 23, 42, 1) 0%, rgba(48, 62, 85, 1) 51%);
+}
+
+input {
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 3px 5px 5px 0px rgba(166, 166, 166, 1);
+    box-shadow: 1px 2px 1px 0px rgba(166, 166, 166, 1);
+}
+
+.title >span {
+    text-decoration: underline;
+}
