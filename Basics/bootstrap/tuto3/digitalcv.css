@@ -24,3 +24,12 @@
 .double-square{
 
 }
+
+.right_menu_icons > a{
+    margin-bottom:2rem;
+    font-size:15pt;
+}
+
+.right_menu_icons > a >i:hover{
+    color:orange !important
+}
