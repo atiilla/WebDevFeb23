@@ -212,3 +212,20 @@ result = !(!false == true) // false
 console.log(result)
 
 //console.log(number)
+
+/*
+
+Bit-level manipulation of data: By using bitwise operators, you can manipulate individual bits of data stored in a computer's memory.
+
+Encryption and decryption: Bitwise operators can be used in encryption and decryption algorithms to scramble or unscramble data.
+
+Image processing: Bitwise operators are commonly used in image processing applications, where they can be used to perform operations such as masking and blending.
+
+Networking: Bitwise operators can be used in networking applications to perform tasks such as subnetting and IP address manipulation.
+
+Device drivers: Bitwise operators are often used in device drivers to control hardware devices at a low level.
+
+Data analysis: Bitwise operators can be used to perform data analysis tasks such as counting the number of bits that are set to 1 in a binary number.
+*/
+
+console.log(10|15)
