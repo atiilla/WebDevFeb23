@@ -96,3 +96,4 @@ AddProp('username', 'root');
 let result = AddProp('password', 'admin123');
 console.log(result)
 // console.log(obj)
+
