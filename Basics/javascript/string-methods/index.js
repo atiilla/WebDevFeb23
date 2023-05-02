@@ -158,3 +158,5 @@ result = String.fromCharCode(102)
 const obj = "1 "
 result = obj.repeat(10).trim().split(" ").fill("👻").toString().replaceAll(",","\n")
 console.log(result);
+
+
