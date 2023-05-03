@@ -85,3 +85,4 @@ const students = [
 // Get avg result of each student in the array
 
 // and print who passed who's not
+
