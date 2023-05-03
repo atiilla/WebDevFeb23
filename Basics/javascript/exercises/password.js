@@ -18,3 +18,5 @@ let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%
     * create a loop that invokes the GeneratePassword function the number of times as the number of passwords you want to generate.
     * print the password to the console.
     */
+
+

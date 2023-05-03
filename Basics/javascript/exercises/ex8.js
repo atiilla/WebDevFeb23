@@ -6,7 +6,14 @@
         - Array.forEach()
 */
 function factorial(num){
-    
+    let factResult = 1;
+    Array.from({
+        length: num
+    }).forEach(_=>{
+        factResult *= num;
+        num--;
+    })
+    return factResult;
 }
 
 console.log(factorial(5))
