@@ -291,3 +291,35 @@ let result = scores.reduce((prev,current,index,itself)=>{
 })
 
 console.log(result)
+
+/*
+
+List of Array Methods
+
+1. map
+2. filter
+3. reduce
+4. concat
+5. every
+6. some
+7. includes
+8. find
+9. findIndex
+10. forEach
+11. slice
+12. splice
+13. sort
+14. reverse
+15. join
+16. toString
+17. isArray
+18. indexOf
+19. lastIndexOf
+20. pop
+21. push
+22. shift
+23. unshift
+24. fill
+25. flat
+
+*/
