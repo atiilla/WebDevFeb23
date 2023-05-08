@@ -87,3 +87,73 @@ function Recursiveloop(obj) {
 //         console.log(`username: ${data[i].username}\naddress:${data[i].address.street}\nlocated at:${data[i].address.geo.lat},${data[i].address.geo.lng}`)
 //     }
 // })
+
+// const username = "nullpointerexception"
+// let newuser=""
+// for(let letter=0;letter<username.length;letter++){
+//    // console.log(username[letter].toUpperCase())
+//     newuser += username[letter].toUpperCase()
+//     console.log(newuser)
+// }
+
+// const number = 100;
+// for(let i=0;i<=number;i++){
+//     console.log('hello',i)
+// }
+
+/*
+1-100
+let total =1
+total = 1+2
+total = 3 + 4
+total = 7 + 5
+
+total+=1-2-3-4-5-6-7-8
+let number=[]
+*/
+
+// 1000 , 3000, 4000
+// 1000 + 3000 + 4000 = 
+
+
+// let messages = [['bla','lol','trololo'],['bla1','lol1','trololo1'],['bla2','lol2','trololo2']]
+
+// for(let i =0;i<10;i++){
+//     for(let x=0;x<10;x++){
+//         console.log(`i=${i}\nx=${x}`)
+//     }
+// }
+
+let messages = [['bla','lol','trololo'],['bla1','lol1','trololo1'],['bla2','lol2','trololo2']]
+for(let firstIndex=0;firstIndex<messages.length;firstIndex++){
+    // nesting here
+    for(let secondIndex=0;secondIndex<messages[firstIndex].length;secondIndex++){
+        console.log(messages[firstIndex][secondIndex])
+    }
+}
+
+
+
+// for(let i=100;i>=0;i--){
+  
+//     if(i>=30 && i<=50){ 
+//     }else{
+//         continue
+//     }
+
+//     console.log('hello',i)
+// }
+
+
+// for(let i=0;i<=100;i++){
+  
+//     if(i>=30 && i<=50){ 
+//         console.log('hello',i)
+//         // code here
+//     }
+
+
+// }
+
+var number = 11;
+
