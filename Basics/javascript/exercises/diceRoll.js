@@ -11,3 +11,4 @@ function shakeIt(){
     // to create random number, use  (Math) object
     console.log('hello')
 }
+
