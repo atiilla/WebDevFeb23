@@ -30,6 +30,11 @@ UserManagement.prototype.findUserById=function(id){
     return this.users.filter(item=>item.id===id)
 }
 
+UserManagement.prototype.deleteById = function(id){
+    let userId = this.users.findIndex(user=>user.id===id)
+    return this.users.splice(userId,1)
+}
+
 let app = new UserManagement();
 // let app1 = new UserManagement(2,'root1','root1@root.com','root111123');
 app.addUser(1,'root','root@root.com','root123');
