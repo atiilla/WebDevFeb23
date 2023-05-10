@@ -42,8 +42,16 @@ Netflix.prototype.addMovie = function (title, genres = [], description, director
         released_year,
         language
     }
+    // insert the object in to movies arraylist
     this.movies.push(obj)
 }
 
+let app = new Netflix();
 
-console.log()
+app.addMovie('The Purge',['Thriller','Action'],'BlablaDescription','Unknown',['Jack','Joe'],'trailer.mp4',
+'the_purge.jpg',2013,['English'])
+
+app.addMovie('Inception',['Sci-fi','Action'],'BlablaDescription','Unknown',['Jack','Joe'],'trailer.mp4','inception.jpg',2014,['English'])
+
+console.log(app.displayAllMovies())
+
