@@ -35,7 +35,7 @@ TodoApplication.prototype.displayAllTasks = function () {
 
     this.todos.forEach(task => {
         tasksList.innerHTML += `
-        <tr>
+            <tr>
                             <td>${task.title}</td>
                             <td>${task.created_date}</td>
                             <td>${task.deadline}</td>
@@ -113,27 +113,31 @@ let app = new TodoApplication();
 
 
 function clickHandler() {
-    tasksList.innerHTML = ""
+  
     let BelgDateFormat = new Date(taskDeadline.value).toLocaleString('nl-NL').split(" ")[0]
     console.log(BelgDateFormat)
+    let owner = taskOwner.options[taskOwner.selectedIndex]
 
-
-
-    if (isDone.options[isDone.selectedIndex].value.includes('false') || isDone.options[isDone.selectedIndex].value.includes('true')) {
+    if (isDone.options[isDone.selectedIndex].value.includes('false') || isDone.options[isDone.selectedIndex].value.includes('true') && owner.value.includes('true')) {
+        tasksList.innerHTML = ""
         let isDoneValue = JSON.parse(isDone.options[isDone.selectedIndex].value)
-        let owner = taskOwner.options[taskOwner.selectedIndex].value
+        
 
         // taskTitle.value
-        app.addTask(taskTitle.value, taskDeadline.value, taskCategory.value, taskDesc.value, isDoneValue, owner)
+        app.addTask(taskTitle.value, taskDeadline.value, taskCategory.value, taskDesc.value, isDoneValue, owner.outerText)
 
         Swal.fire({
             title: 'Success!',
             text: 'Task is added!',
             icon: 'success',
-            confirmButtonText: 'Understand!'
+            confirmButtonText: 'OK!'
         })
 
         app.displayAllTasks()
+
+     
+
+
     } else {
         // alert('You can not leave input field blank')
         Swal.fire({
@@ -148,7 +152,9 @@ function clickHandler() {
 
 
     // remove inputs values
-
+   // reset inputs 
+   taskTitle.value=""
+   taskCategory.value=""
 }
 
 // app.removeTask(3)
