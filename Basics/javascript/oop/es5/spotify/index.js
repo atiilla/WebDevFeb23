@@ -78,6 +78,14 @@ Spotify.prototype.nextSong = function () {
 
 }
 
+Spotify.prototype.playList = function () {
+    // repeat playlist
+    // next song
+
+    this.nextSong()
+    this.playList()
+}
+
 Spotify.prototype.addDelay = function (ms) {
     var start = new Date().getTime();
     var end = start;
@@ -86,6 +94,7 @@ Spotify.prototype.addDelay = function (ms) {
     }
 }
 let app = new Spotify()
+
 
 app.addSong('Toxicity', 'SOAD', 'Rock', 'Toxicity', 'EN', '10', '2004');
 app.addSong('Byob', 'SOAD', 'Rock', 'Unknown', 'EN', '7', '2005');
@@ -98,13 +107,4 @@ app.addSong('Upper Cuts1', 'Terror Reid', 'Rap', 'Unknown', 'EN', '3', '2005');
 // app.pause();
 // app.playAny()
 // app.findSongByName('Upper')
-app.nextSong()
-app.nextSong();
-app.nextSong();
-app.nextSong();
-app.nextSong();
-app.nextSong();
-app.nextSong();
-app.nextSong();
-app.nextSong();
-app.nextSong();
+app.playList()
