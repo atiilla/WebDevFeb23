@@ -16,6 +16,7 @@ function Spotify() {
     this.songs = []
     this.users = []
     this.isPlaying = false;
+    this.isPaused = false;
     this.currentSong = 0;
     //    this.currentPlaying=""
     //    this.paused=false;
@@ -37,26 +38,29 @@ Spotify.prototype.addSong = function (name, artist, genre, album, lang, duration
 // end of add song method
 
 Spotify.prototype.playAny = function () {
-    let random = Math.floor(Math.random() * this.songs.length) // shuffle 
-    this.isPlaying ? console.log(`${this.songs[random].name} - ${this.songs[random].artist} is playing now...`) // pass a random number and extract a song object
-        :
-        console.log(`${this.songs[random].name} - ${this.songs[random].artist} is paused...`)
-    // if(this.isPlaying){
-    //     this.paused = false
-    //     this.currentPlaying = this.songs[random].name
-    //     console.log(`${currentPlaying} is playing...`)
-    // }
-
+    let random = Math.floor(Math.random() * this.songs.length); // shuffle
+    if (this.isPlaying === false) {
+        this.isPlaying = true;
+   
+        console.log(`${this.songs[random].name} - ${this.songs[random].artist} is playing now...`)
+        this.addDelay(Number(this.songs[random].duration) * 1000)
+        this.isPlaying = false;
+    }
+    // if play called again then continue playing with same song
+    
 }
+
 
 // Pause player
 Spotify.prototype.pause = function () {
-    return this.isPlaying = false;
+    this.isPaused = true;
+    return this.isPlaying = false
 }
 
 // Play player
 Spotify.prototype.play = function () {
-    return this.isPlaying = true
+    this.isPlaying = true;
+    return this.isPaused = false
 }
 
 Spotify.prototype.findSongByName = function (songName) {
@@ -66,13 +70,13 @@ Spotify.prototype.findSongByName = function (songName) {
 
 Spotify.prototype.nextSong = function () {
     console.log(`${this.songs[this.currentSong].name} - ${this.songs[this.currentSong].artist} is playing now...`)
-    let SizeOfSongs = this.songs.length-1
+    let SizeOfSongs = this.songs.length - 1
 
     this.addDelay(Number(this.songs[this.currentSong].duration) * 1000)
 
-    if(SizeOfSongs === this.currentSong){
-        this.currentSong =0;
-    }else{
+    if (SizeOfSongs === this.currentSong) {
+        this.currentSong = 0;
+    } else {
         this.currentSong++
     }
 
@@ -96,6 +100,7 @@ Spotify.prototype.addDelay = function (ms) {
 let app = new Spotify()
 
 
+
 app.addSong('Toxicity', 'SOAD', 'Rock', 'Toxicity', 'EN', '10', '2004');
 app.addSong('Byob', 'SOAD', 'Rock', 'Unknown', 'EN', '7', '2005');
 app.addSong('My name is', 'Eminem', 'Rap', 'Unknown', 'EN', '5', '2005');
@@ -107,4 +112,13 @@ app.addSong('Upper Cuts1', 'Terror Reid', 'Rap', 'Unknown', 'EN', '3', '2005');
 // app.pause();
 // app.playAny()
 // app.findSongByName('Upper')
-app.playList()
+// app.playList()
+
+// Spotify.prototype.addSongIntoUserPlaylist = function(username,songName){
+//     let userObj = this.users.find(user=>user.username === username) // single user object
+//     let songObj = this.songs.find(song=>song.name ===songName);
+//     userObj.playlist.push(songObj)
+// }
+
+
+// app.addSongIntoUserPlaylist('atilla','Byob')
