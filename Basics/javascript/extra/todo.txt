@@ -1,0 +1,22 @@
+Archana
+- loops
+- arraylist
+
+Arsalan
+- Object literal {}
+- function (console/return) <get> <set>
+     - working with objects
+     - working with arraylist
+
+Apple
+- OOP intro basics
+
+Vlad 
+- this <keyword>
+
+Gregory
+- callback
+
+Staci
+- classes<const> and object literal
+
