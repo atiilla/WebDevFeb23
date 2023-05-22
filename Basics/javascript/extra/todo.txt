@@ -1,9 +1,9 @@
 Archana
-- loops
-- arraylist
+- loops ok 
+- arraylist ok
 
 Arsalan
-- Object literal {}
+- Object literal {} ok
 - function (console/return) <get> <set>
      - working with objects
      - working with arraylist

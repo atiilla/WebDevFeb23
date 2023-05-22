@@ -1,7 +1,7 @@
 // regular for loop
 //for(initvar;condition;increment/decrement)
 let i=0;
-let names = ['Joe','Mike','Smith']
+
 let currentName = ""
 // for(i;i<=10;i++){
 //     // console.log(i)
@@ -16,10 +16,10 @@ let currentName = ""
 // }
 
 //  for of in 
-const obj = {
-    name:'joe',
-    age:21
-}
+// const obj = {
+//     name:'joe',
+//     age:21
+// }
 
 // for(let name of names){
 //     console.log(name)
@@ -75,10 +75,6 @@ for(let i=0;i<convertObjectToArray.length;i++){
 }
 
 
-
-
-
-
 // console.log(currentName)
 
 // Local scope variable?
@@ -92,3 +88,50 @@ for(let i=0;i<convertObjectToArray.length;i++){
 // console.log(name)
 
 // Global scope variable?
+
+let names = ['Joe','Mike','Smith']
+
+// let result = names.map(name=>name) // undefined - null - [] - ['Joe','Mike','Smith']
+// result = names.forEach(name=>name) // undefined - null - [] - ['Joe','Mike','Smith']
+// console.log(result);
+let result;
+// result = names.map(name=>name.includes('i')?name:null)
+// console.log(result)
+// result = names.filter(name=>name.includes('i'))
+// names.splice(0,2) // splice changes original array
+// names.slice(0,4)
+// result = names
+
+
+// console.log(result)
+
+// const posts = [
+//     {
+//         title:'blabla',
+//         images:'https://play-lh.googleusercontent.com/OABfRfKxyvf6PUg_6YBJXvbKSbegFsBKvFDEm5jOA0rC5k1la-OwmnWz6GK55vr3EGA'
+//     },
+//     {
+//         title:'blabla1',
+//         images:'https://play-lh.googleusercontent.com/OABfRfKxyvf6PUg_6YBJXvbKSbegFsBKvFDEm5jOA0rC5k1la-OwmnWz6GK55vr3EGA'
+//     },
+//     {
+//         title:'blabla2',
+//         images:'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/800px-Tux.svg.png'
+//     }
+// ]
+
+
+// let btnTitles  = document.querySelector('.btn-title')
+
+// posts.forEach(post=>{
+//     btnTitles.innerHTML+=`<button type="button" class="btn btn-primary" id="${post.title}">${post.title}</button>`
+// })
+
+// document.addEventListener('click',(e)=>{
+//     e.preventDefault()
+//     if(e.target.tagName==='BUTTON'){
+//         let post = posts.find(item=>item.title===e.target.id)
+//         console.log(post)
+//         document.querySelector('img').src=post.images
+//     }
+// })
