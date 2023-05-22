@@ -27,6 +27,11 @@ function GeneratePassword(size) {
     let password = ""
     Array.from({ length: size }).forEach((x, i) => {
         var getRandomNumber = Math.floor(Math.random() * chars.length)
+        // 0-100 > 4 - 66
+        // chars[66]
+        // miami 
+        // chars[44]
+        // vulcan
         //console.log(chars[getRandomNumber])
         password = password + chars[getRandomNumber]
         console.log(Math.floor(Math.random() * chars.length))
