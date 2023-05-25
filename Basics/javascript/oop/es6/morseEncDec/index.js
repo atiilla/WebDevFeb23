@@ -68,29 +68,29 @@ class Morse {
 
     encrypt(message) {
         let msg = message.toUpperCase().split('')
-        for(let letter of msg){
+        for (let letter of msg) {
             //console.log(this.morseDict[letter])
-            this.encrypted+=" "+this.morseDict[letter]
+            this.encrypted += " " + this.morseDict[letter]
         }
         console.log(this.encrypted.trim())
     }
 
     decrypt(encrypted) {
         let splittedLetters = encrypted.split(" ")
-     //   console.log(splittedLetters)
+        //   console.log(splittedLetters)
         // let i=0;
         // while(i<splittedLetters.length){
         //     console.log(splittedLetters[i])
         //     i++
         // }
-        for(let letter of splittedLetters){
-        //    if("∵∴∴" === "∵∴∴"){
-        //     console.log(letter)
-        //    }
-            for(let morseLetter in this.morseDict){
-                if(this.morseDict[morseLetter] === letter){
+        for (let letter of splittedLetters) {
+            //    if("∵∴∴" === "∵∴∴"){
+            //     console.log(letter)
+            //    }
+            for (let morseLetter in this.morseDict) {
+                if (this.morseDict[morseLetter] === letter) {
                     // console.log(morseLetter)
-                    this.decrypted+=morseLetter
+                    this.decrypted += morseLetter
                 }
             }
         }
