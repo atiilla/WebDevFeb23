@@ -123,6 +123,6 @@ doctor1.addUser({
 doctor1.makeAppointment()
 
 let student1 = new Student();
-console.log(student1.users)
+console.log(student1.users);
 
 // console.log(JSON.stringify(Person))
