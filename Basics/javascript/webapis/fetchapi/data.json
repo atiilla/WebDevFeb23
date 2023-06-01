@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Leanne Graham",
+      "name": "Viktor",
       "username": "Bret",
       "email": "Sincere@april.biz",
       "address": {
@@ -90,29 +90,6 @@
         "name": "Robel-Corkery",
         "catchPhrase": "Multi-tiered zero tolerance productivity",
         "bs": "transition cutting-edge web services"
-      }
-    },
-    {
-      "id": 5,
-      "name": "Chelsey Dietrich",
-      "username": "Kamren",
-      "email": "Lucio_Hettinger@annie.ca",
-      "address": {
-        "street": "Skiles Walks",
-        "suite": "Suite 351",
-        "city": "Roscoeview",
-        "zipcode": "33263",
-        "geo": {
-          "lat": "-31.8129",
-          "lng": "62.5342"
-        }
-      },
-      "phone": "(254)954-1289",
-      "website": "demarco.info",
-      "company": {
-        "name": "Keebler LLC",
-        "catchPhrase": "User-centric fault-tolerant solution",
-        "bs": "revolutionize end-to-end systems"
       }
     },
     {
@@ -229,6 +206,11 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
+    },
+    {
+      "username": "admin",
+      "password": "qwerty",
+      "id": 11
     }
   ],
   "articles": [],
