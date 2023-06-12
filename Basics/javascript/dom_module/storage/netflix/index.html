@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand bg-dark" href="#">Penguin</a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Categories</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Thriller</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" href="#exampleModalToggle" role="button" aria-current="page">Dashboard</a>
+                        </li>
+                    </ul>
+                    <div class="mb-3 d-flex my-2 mx-5">
+                        <input type="text"
+                          class="form-control searchFilter" name="" id="" aria-describedby="helpId" placeholder="Search a movie...">
+                      </div>
+                    <div class="socialmedia d-flex my-2 my-lg-0">
+                        <i class="fa-brands fa-instagram lead" style="color: #e65000;"></i>
+                        <i class="fa-brands fa-twitter lead mx-1" style="color: #0758e4;"></i>
+                        <i class="fa-brands fa-facebook lead mx-1" style="color: #0758e4;"></i>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="">
+        <div class="container-fluid">
+            <div class="row my-3 g-2 movies">
+                <!-- <div class="col-md-3">
+                    <div class="card" style="background-color:orangered; border-color:darkblue;">
+                      <img class="card-img-top" src="https://img.fruugo.com/product/3/71/14270713_max.jpg" alt="Title">
+                      <div class="card-body">
+                        <h4 class="card-title">Title</h4>
+                        <p class="card-text">Text</p>
+                      </div>
+                    </div>
+                </div> -->
+                
+                
+            </div>
+            <div class="button-groups mx-auto text-center">
+                <button type="button" class="btn btn-primary pagination-btn">Prev Page</button>
+                <button type="button" class="btn btn-primary pagination-btn">Next Page</button>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer class="bg-dark bottom-0 w-100 text-light py-3 text-center mt-5">
+        <div class="container">
+            <p class="lead"><i class="fas fa-copyright    "></i> Penguin 2023</p>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="exampleModalToggle" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen bg-dark text-light">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Dashboard | Movies</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid text-dark">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Add New Movie</h1>
+                        <div class="mb-3">
+                          <label for="" class="form-label">Movie Title</label>
+                          <input type="text"
+                            class="form-control addMovie" name="" id="" aria-describedby="helpId" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Poster</label>
+                            <input type="text"
+                              class="form-control addMovie" name="" id="" aria-describedby="helpId" placeholder="">
+                          </div>
+                          <div class="mb-3">
+                            <label for="" class="form-label"></label>
+                            <textarea class="form-control addMovie" name="" id="" rows="3"></textarea>
+                          </div>
+
+                          <button type="button" class="btn btn-primary save_movie">Save Movie</button>
+                    </div>
+                    <div class="col-md-12">
+                        <h1>My movies List</h1>
+                        <div class="table-responsive-md">
+                            <table class="table table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Poster</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="watch_later_list">
+                                    <!-- <tr class="">
+                                        <td scope="row">R1C1</td>
+                                        <td>R1C2</td>
+                                        <td>R1C3</td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="./app.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

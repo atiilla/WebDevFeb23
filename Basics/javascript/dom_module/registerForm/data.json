@@ -1,3 +1,22 @@
 {
-    "db":[]
+  "db": [
+    {
+      "email": "lol@lol.com",
+      "password": "lol123",
+      "address": "lol street",
+      "address2": "lol2 street",
+      "city": "trolololo",
+      "zipCode": "900",
+      "id": 1
+    },
+    {
+      "email": "asdad",
+      "password": "asdadasd",
+      "address": "sadasd",
+      "address2": "asdasd",
+      "city": "asdasd",
+      "zipCode": "333434",
+      "id": 2
+    }
+  ]
 }
