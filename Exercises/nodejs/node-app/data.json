@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "username": "root",
+      "password": "root123",
+      "id": 1
+    },
+    {
+      "username": "livina",
+      "password": "root123",
+      "id": 2
+    },
+    {
+      "username": "archana",
+      "password": "root123",
+      "id": 3
+    },
+    {
+      "username": "greg",
+      "password": "root123",
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+> mkdir node-app
+> cd node-app 
+
+init nodejs application
+> npm init -y
+
+install node-fetch in application
+> npm i node-fetch@v2
+
+include node-fetch package in your js file
+> const fetch = require()
+
+// html parser
+> npm install cheerio
+
+// run fake api
+> json-server data.json -p 4000
+

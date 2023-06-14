@@ -1,0 +1,22 @@
+Step 1
+To init node app > npm init
+
+Step 2
+To start node app > npm start
+
+Step 3
+init git repo > git init
+
+Step 4 
+add files > git add .
+
+Step 5
+set commit msg > git commit -m "blabla"
+
+Step 6
+// UPDATE
+
+
+git add .
+git commit -m "updated"
+npm publish
