@@ -80,7 +80,7 @@ foodCategoryContainer.addEventListener('click',(e)=>{
                 getVideoOfMealById(meal.idMeal)
                 .then(video=>{
                   //  console.log(video)
-                    meal.youtube_video = video
+                    meal.youtube_video = video // created youtube_video property in meal object
                     FoodMenuContainer.append(makeMenuItem(meal))
                     console.log(meal)
                 })
