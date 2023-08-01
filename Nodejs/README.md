@@ -11,20 +11,20 @@
 * `Node.js is a JavaScript server-side runtime server environment.`
 
 ## What we will learn in Nodejs?
-- [ ] basics
-- [ ] modules
-- [ ] events
-- [ ] file system
-- [ ] http
-- [ ] url
+- [x] basics
+- [x] modules
+- [x] events
+- [x] file system
+- [x] http
+- [x] url
 - [ ] query string
 - [ ] path
-- [ ] os
+- [x] os
 - [ ] child process
 - [ ] readline
-- [ ] dns
-- [ ] net
-- [ ] process
+- [x] dns
+- [x] net
+- [x] process
 - [ ] file upload
 - [ ] express.js framework
   - [ ] overview
