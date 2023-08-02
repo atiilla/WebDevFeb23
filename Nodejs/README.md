@@ -17,14 +17,14 @@
 - [x] file system
 - [x] http
 - [x] url
-- [ ] query string
-- [ ] path
+- [x] query string
+- [x] path
 - [x] os
-- [ ] child process
-- [ ] readline
 - [x] dns
 - [x] net
 - [x] process
+- [ ] child process
+- [ ] readline
 - [ ] file upload
 - [ ] express.js framework
   - [ ] overview
