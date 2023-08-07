@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>
+    <%= title %>
+  </h1>
+  <h2>
+    <%= username %>
+  </h2>
+  <p>Welcome to <%= title %>
+  </p>
+
+  <% numbers.forEach(function(n){ %>
+    <h1><%=n%></h1>
+  <%})%>
+</body>
+
+</html>
