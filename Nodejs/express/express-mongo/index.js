@@ -42,7 +42,7 @@ const todoSchema = new mongoose.Schema({
     },
     time: {
         type: Date,
-        default:Date.now()
+        default: Date.now()
     }
 })
 
@@ -79,84 +79,86 @@ app.post('/', (req, res) => {
 
 })
 
-app.get('/todo/:id',(req,res)=>{
-    const {id} = req.params
+app.get('/todo/:id', (req, res) => {
+    const { id } = req.params
     // Todo.findById(id)
     Todo.find({
-        '_id':id
+        '_id': id
     })
-    .then(result=>{
-        res.json({
-            msg:'success',
-            todo:result
+        .then(result => {
+            res.json({
+                msg: 'success',
+                todo: result
+            })
         })
-    })
-    .catch(err=>{
-        res.json({
-            msg:'failure',
-            error:err
+        .catch(err => {
+            res.json({
+                msg: 'failure',
+                error: err
+            })
         })
-    })
 })
 
-app.delete('/todo/:id',(req,res)=>{
-    const {id} = req.params
+app.delete('/todo/:id', (req, res) => {
+    const { id } = req.params
     Todo.findByIdAndDelete(id)
-    .then(()=>{
-        res.json({
-            msg:`${id} is deleted`
+        .then(() => {
+            res.json({
+                msg: `${id} is deleted`
+            })
         })
-    })
-    .catch(err=>{
-        res.json({
-            msg:'failure',
-            error:err
+        .catch(err => {
+            res.json({
+                msg: 'failure',
+                error: err
+            })
         })
-    })
 })
 
-app.get('/find',(req,res)=>{
-    const {q} = req.query
+
+app.get('/find', (req, res) => {
+    const { q } = req.query
     // http://localhost:3000/find?q=Vue.js
-    if(q){
+    if (q) {
         Todo.find({
-            "title":{ "$regex": q, "$options": "i" }
+            "title": { "$regex": q, "$options": "i" }
         })
-        .then(result=>{
-            res.json({
-                msg:'success',
-                todo:result
+            .then(result => {
+                res.json({
+                    msg: 'success',
+                    todo: result
+                })
             })
-        })
-        .catch(err=>{
-            res.json({
-                msg:'failure',
-                error:err
+            .catch(err => {
+                res.json({
+                    msg: 'failure',
+                    error: err
+                })
             })
-        })
-    }else{
+    } else {
         res.json({
-            msg:'You must send req with q='
+            msg: 'You must send req with q='
         })
     }
-    
+
 })
 
 // get all todos from database
 app.get('/todos', (req, res) => {
     Todo.find({})
-    .then(allTodo=>{
-        res.json({
-            msg:'success',
-            todos:allTodo
+        .then(allTodo => {
+            res.json({
+                msg: 'success',
+                todos: allTodo
+            })
         })
-    })
-    .catch(err=>{
-        res.json({
-            msg: 'failure',
-            error:err
+        .catch(err => {
+            res.json({
+                msg: 'failure',
+                error: err
+            })
         })
-    })
+
 })
 
 // http://localhost:3000/todo?q=Python

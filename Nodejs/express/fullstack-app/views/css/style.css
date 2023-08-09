@@ -1,0 +1,17 @@
+/*
+Reset CSS
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo{
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    border-bottom: 1px dashed #aca9a9;
+}
