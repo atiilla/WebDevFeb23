@@ -17,3 +17,5 @@ This is a simple application that allows you to shorten the URL.
 - sweetalert2
 - bootstrap
 - body-parser
+
+![image](https://raw.githubusercontent.com/atiilla/WebDevFeb23/main/Nodejs/express/fullstack-app/screenshot.png)
