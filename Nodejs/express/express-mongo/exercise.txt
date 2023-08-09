@@ -1,0 +1,10 @@
+EXPRESSJS BACKEND FOR WORDPRESS
+posts > get all articles
+post/:id > get single post(details)
+post/:delete > delete single post by id
+post > insert new post
+
+FRONTEND
+INPUT FORM ELEMENTS
+BUTTON
+FETCH API
