@@ -1,0 +1,48 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+.main {
+	background-image: url(https://wallpapercave.com/wp/wp11004210.png);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.main .contain {
+	background-color: #000;
+	height: 100%;
+	opacity: 0.7;
+}
+
+.main .contain .content {
+	text-align: center;
+	padding-top: 230px;
+	color: #fff;
+}
+
+.main .contain .content h4 {
+	font-size: 50px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.main .contain .content hr {
+	width: 50%;
+}
+
+.main .contain .content p {
+	font-size: 20px;
+	letter-spacing: 0.8px;
+}
+
+.main .contain .content input {
+	height: 50px;
+	width: 180px;
+	font-size: 25px;
+	text-transform: uppercase;
+}
