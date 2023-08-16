@@ -1,0 +1,15 @@
+fetch('http://localhost:8181/user/login',{
+    method:'POST',
+    headers:{
+        'Content-Type':'application/json'
+    },
+    credentials:'include',
+    body:JSON.stringify({
+        username:'gregory',
+        password:'quertyd123'
+    })
+})
+.then(res=>res.json())
+.then(data=>{
+    console.log(data)
+})

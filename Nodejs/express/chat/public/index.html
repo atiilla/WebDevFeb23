@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socket.IO Chat</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+</head>
+<body>
+  <script>
+    const socket = io();
+
+    const username = prompt('Please enter your username:');
+    socket.emit('sendUsername', username);
+  </script>
+</body>
+</html>
