@@ -38,11 +38,33 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/public',express.static(path.join(__dirname, 'public')));
 ```
 
-## DB connection in app.js
+## Make config folder and create db.js
 ```
-mongoose.connect(process.env.DB_URL)
-.then(() => console.log('DB Connected!'))
-.catch(err => {
-    console.log(`DB Connection Error: ${err.message}`);
-});
+const mongoose = require('mongoose');
+
+module.exports = ()=>{
+    mongoose.connect(process.env.DB_URL)
+        .then(() => console.log('DB connected.'))
+        .catch(e => console.log(e))
+}
+```
+
+## Then import db.js in app.js
+```
+require('./config/db')();
+```
+
+## Strong password
+min 8
+max 16
+alpha numeric + special character = strong password
+Lg6pBZJMI$I5wj
+
+```
+openssl req -x509 \
+            -sha256 -days 356 \
+            -nodes \
+            -newkey rsa:2048 \
+            -subj "/CN=webdev.com/C=US/L=Web Developer" \
+            -keyout rootCA.key -out rootCA.crt 
 ```
