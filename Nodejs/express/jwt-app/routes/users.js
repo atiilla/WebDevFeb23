@@ -1,5 +1,5 @@
 var express = require('express');
-const { getUsers, getProfile,login, getRandomUser,register } = require('../controller/userController');
+const { getUsers, getProfile,login, getRandomUser,register, logout } = require('../controller/userController');
 var router = express.Router();
 var {isTokenValid} = require('../middlewares/index')
 
@@ -12,6 +12,7 @@ router.get('/random-user',getRandomUser)
 // POST requests
 router.post('/login',login);
 router.post('/register',register)
+router.post('/logout',logout)
 
 
 module.exports = router;

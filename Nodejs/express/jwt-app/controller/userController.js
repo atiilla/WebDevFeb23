@@ -1,6 +1,7 @@
 var UserModel = require('../model/user')
 var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs')
+var memoryCache = require('memory-cache')
 
 const getUsers = (req, res, next) => {
     UserModel.find({})
@@ -22,11 +23,15 @@ const getRandomUser = (req, res) => {
 }
 
 const getProfile = (req, res) => {
+    let token = req.headers.authorization.split(' ')[1]
+    let decoded = jwt.decode(token,{
+        complete:true
+    })
     UserModel.find({
-        'username': req.body.username
+        'username': decoded.payload.username
     })
         .then(user => {
-            res.status(200).json(user)
+            res.status(200).json(user[0])
         })
 
 }
@@ -58,7 +63,7 @@ const login = async (req, res) => {
                     { username: req.body.username, date: new Date().getTime() }, // payload
                     process.env.JWT_KEY, // secret key
                     { // token options 3rd arg
-                        expiresIn: '20s' // expire time
+                        expiresIn: '1h' // expire time
                     })
             }) :
             res.status(401).json({
@@ -98,11 +103,20 @@ const register = async (req, res) => {
     }
 }
 
+const logout = (req,res)=>{
+    let token = req.headers.authorization.split(' ')[1]
+    memoryCache.put(token,token,1000*60*60)
+    res.status(200).json({
+        message:'user logged out'
+    })
+}
+
 // exports controllers
 module.exports = {
     getUsers,
     getProfile,
     login,
     getRandomUser,
-    register
+    register,
+    logout
 }
