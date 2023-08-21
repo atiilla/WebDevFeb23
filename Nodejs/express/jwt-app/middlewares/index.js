@@ -12,6 +12,11 @@ const isTokenValid = (req, res, next) => {
         jwt.verify(token, process.env.JWT_KEY, (err, decoded) => {
             if (decoded) {
                 // let controller go into next step
+                // if(decoded.payload.username === 'admin'){
+                //     console.log('admin')
+                // }else{
+                //     console.log('not admin')
+                // }
                 next()
             } else {
                 // invalid or expired token

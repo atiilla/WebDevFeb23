@@ -105,7 +105,7 @@ const register = async (req, res) => {
 
 const logout = (req,res)=>{
     let token = req.headers.authorization.split(' ')[1]
-    memoryCache.put(token,token,1000*60*60)
+    memoryCache.put(token,token,1000*60*60) // 1 hour blacklist token
     res.status(200).json({
         message:'user logged out'
     })
