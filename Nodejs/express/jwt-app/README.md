@@ -4,6 +4,7 @@
 - mongoose
 - mongoose-unique-validator
 - jsonwebtoken
+- memory-cache
 
 ## Installation
 ```
