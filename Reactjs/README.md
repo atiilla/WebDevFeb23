@@ -23,6 +23,11 @@
 - [ ] redux-toolkit
 - [ ] http-proxy-middleware
 
+## Create a react project
+```
+npx create-react-app yourapplication
+```
+
 **References:**
 * [Reactjs 1](https://www.w3schools.com/react/default.asp)
 * [Reactjs 2](https://www.tutorialspoint.com/reactjs/index.htm)
