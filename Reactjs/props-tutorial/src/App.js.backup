@@ -1,0 +1,15 @@
+import Avatar from "./components/avatar";
+import Button from "./components/button";
+
+export default function App(){
+    return(
+        <div>
+            <h1>App</h1>
+            <Button color={"primary"} value={"Login"}/>
+            <Button color={"danger"} value={"Register"}/>
+
+            <Avatar khalid={"https://img.freepik.com/premium-vector/female-user-profile-avatar-is-woman-character-screen-saver-with-emotions_505620-556.jpg?w=2000"}/>
+            <Avatar khalid={"https://i.pinimg.com/564x/f4/9c/2c/f49c2c5054772ed87c4cdd28db9ff354.jpg"}/>
+        </div>
+    )
+}

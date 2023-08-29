@@ -1,0 +1,6 @@
+--2023-08-29 10:07:13--  https://media.gettyimages.com/id/1290904409/nl/foto/abstract-digitaal-nieuwsconcept.jpg?s=612x612
+Resolving media.gettyimages.com (media.gettyimages.com)... 18.65.39.45, 18.65.39.128, 18.65.39.35, ...
+Connecting to media.gettyimages.com (media.gettyimages.com)|18.65.39.45|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2023-08-29 10:07:14 ERROR 400: Bad Request.
+
