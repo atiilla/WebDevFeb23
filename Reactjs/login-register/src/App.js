@@ -4,7 +4,7 @@ import { Tab, Tabs } from 'react-bootstrap'
 import LoginForm from './components/auth/login';
 import RegisterForm from './components/auth/register';
 import Profile from './components/profile';
-
+import {Helmet} from 'react-helmet'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -62,7 +62,8 @@ function App() {
 
     return (
         <div className='container my-4'>
-
+        <Helmet>
+        </Helmet>
             <ToastContainer
                 position="top-right"
                 autoClose={2000}

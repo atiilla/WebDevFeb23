@@ -1,0 +1,25 @@
+.nav-tabs {
+	.nav-item.show {
+		.nav-link {
+			color: orangered;
+			background-color: #3d3c3c;
+			border-color: none;
+		}
+	}
+	.nav-link.active {
+		color: rgb(218, 218, 218);
+		background-color: #252525;
+		border-color: none;
+	}
+	border-bottom: none;
+	.nav-link {
+        background-color: #3d3c3c;
+        color: rgb(218, 218, 218);
+		&:hover {
+			color: gray !important;
+		}
+	}
+}
+
+// npm install sass
+
