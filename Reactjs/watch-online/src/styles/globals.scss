@@ -23,3 +23,15 @@
 
 // npm install sass
 
+
+.movie_image {
+    height: 20vh !important;
+    object-fit: cover !important;
+}
+
+.card {
+    max-height: 350px;
+    min-width: 300px;
+    height: 100%;
+	overflow: hidden !important;
+}

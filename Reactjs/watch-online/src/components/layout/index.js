@@ -3,11 +3,12 @@ import Header from "./header/header";
 import Sidebar from "./sidebar";
 import Footer from "./footer";
 
-export default function Layout({children}) {
+export default function Layout({children,authfunc}) {
     return (
         <>
-            <Header />
+            <Header authfunc={authfunc}/>
             <Container fluid>
+          
                 <Row className="justify-content-center me-0 my-3">
                     <Col md={3}>
                         <Sidebar />

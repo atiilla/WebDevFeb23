@@ -4,13 +4,11 @@ export default function MovieCard(props) {
     return (
         <Col key={props.idx}>
             <Card>
-                <Card.Img variant="top" src="https://picsum.photos/200/100" />
+                <a href="#" onClick={()=>props.handleDetail(props.movie)}><Card.Img variant="top" src={props.movie.image_url} className="movie_image"/></a>
                 <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>{props.movie.name}</Card.Title>
                     <Card.Text>
-                        This is a longer card with supporting text below as a natural
-                        lead-in to additional content. This content is a little bit
-                        longer.
+                        {props.movie.desc.substring(0,60)}...
                     </Card.Text>
                 </Card.Body>
             </Card>

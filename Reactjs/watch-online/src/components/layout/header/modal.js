@@ -2,6 +2,7 @@ import { Button, Modal } from "react-bootstrap";
 import TabsMenu from "./tabs.menu";
 
 export default function AuthModal(props) {
+    
     return (
         <Modal
         {...props}
@@ -15,7 +16,7 @@ export default function AuthModal(props) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <TabsMenu/>
+                <TabsMenu authfunc={props.authfunc}/>
             </Modal.Body>
             {/* <Modal.Footer>
                 <Button onClick={props.onHide}>Close</Button>

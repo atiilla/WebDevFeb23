@@ -1,7 +1,7 @@
 import Navigation from "../nav";
 
-export default function Header(){
+export default function Header({authfunc}){
     return (
-        <Navigation/>
+        <Navigation authfunc={authfunc}/>
     )
 }

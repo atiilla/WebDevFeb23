@@ -2,7 +2,7 @@ import { Tab, Tabs } from "react-bootstrap";
 import Login from "./login";
 import Register from "./register";
 
-export default function TabsMenu() {
+export default function TabsMenu({authfunc}) {
     return (
         <Tabs
             defaultActiveKey="login"
@@ -11,10 +11,10 @@ export default function TabsMenu() {
             fill
         >
             <Tab eventKey="login" title="Login">
-                <Login/>
+                <Login authfunc={authfunc}/>
             </Tab>
             <Tab eventKey="register" title="Register">
-                <Register/>
+                <Register authfunc={authfunc}/>
             </Tab>
         </Tabs>
     )
