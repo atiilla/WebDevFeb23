@@ -1,13 +1,14 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
 import AuthModal from "./header/modal";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { isLoggedIn } from "../../utils";
 import jwt_decode from "jwt-decode";
+import { DataContext } from "../../context";
 
 export default function Navigation({authfunc}) {
     const [modalShow, setModalShow] = React.useState(false);
     const [username,setUsername] = useState("")
-    
+    const DataConsume = useContext(DataContext)
     useEffect(()=>{
         let token = localStorage.getItem('token') || ""
         isLoggedIn(token)
@@ -47,6 +48,9 @@ export default function Navigation({authfunc}) {
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
+                {
+                    console.log(DataConsume)
+                }
             </Navbar>
             <AuthModal
                 show={modalShow}

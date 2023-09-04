@@ -1,13 +1,14 @@
 import { Alert, Button, ButtonGroup, Row } from 'react-bootstrap'
 import Layout from './components/layout'
 import MovieCard from './components/movie.card'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import {
     isLoggedIn,
     login,
     paginator
 } from './utils/index'
 import MovieDetail from './components/movie.detail'
+import { DataContext } from './context'
 export default function App() {
     const [user, setUser] = useState({});
     const [movies, setMovies] = useState([]);
@@ -67,7 +68,8 @@ export default function App() {
     }
 
     return (
-        <Layout authfunc={[handleLogin, handleChange, handleRegister]}>
+        <DataContext.Provider value={"Hello world"}>
+            <Layout authfunc={[handleLogin, handleChange, handleRegister]}>
             <div className='m-auto text-center'>
                 <Row xs={1} md={4} className="g-4 mb-3 text-start">
                     {
@@ -87,5 +89,6 @@ export default function App() {
                 <MovieDetail show={detail} handleDetail={handleDetail} setShow={setDetail} singleMovie={movieDetail}/>
             </div>
         </Layout>
+        </DataContext.Provider>
     )
 }
